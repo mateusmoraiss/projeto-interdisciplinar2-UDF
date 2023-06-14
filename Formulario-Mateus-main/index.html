@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciador de tarefas - Formulário</title>
+	<link rel="shortcut icon" href="favicon.png">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<h2>Gerenciador de tarefas para Desenvolvedores =) </h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="processa_formulario.php" method="post">
+			<h1>Criar Conta</h1>
+			<div class="social-container">
+	
+				<a href="https://www.instagram.com/mateusmoraiskrr/" class="social"><i class="fab fa-instagram"></i></a>
+
+				<a href="https://www.linkedin.com/in/mateus-morais-/" class="social"><i class="fab fa-linkedin-in"></i></a>
+				
+				<a href="https://github.com/mateusmoraiss" class="social"><i class="fab fa-github"></i></a>
+
+
+			</div>
+			<span>Minhas redes sociais acima</span>
+			<input type="text" name="nome" placeholder="Nome" />
+    <input type="email" name="email" placeholder="Email" />
+    <input type="password" name="senha" placeholder="Senha" />
+    <button type="submit">Registrar</button>
+</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form method="post" action="verifica_login.php">
+			<h1>Fazer Login</h1>
+			<div class="social-container">
+				<a href="https://www.instagram.com/mateusmoraiskrr/" class="social"><i class="fab fa-instagram"></i></a>
+
+				<a href="https://www.linkedin.com/in/mateus-morais-/" class="social"><i class="fab fa-linkedin-in"></i></a>
+				
+				<a href="https://github.com/mateusmoraiss" class="social"><i class="fab fa-github"></i></a>
+
+			</div>
+			<span>minhas redes sociais acima</span>
+			<input type="email" placeholder="Email" name="email" />
+			<input type="password" placeholder="Senha" name="senha" />
+			<a href="#">Novo dia, novas tarefas!</a>
+			<button type="submit">Login</button>
+		  </form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Já tem uma conta? </h1>
+				<p>Bem-vindo(a) de volta! Estou feliz em te ver novamente. 
+				</p>
+				<button class="ghost" id="signIn">Já tenho uma conta</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Fala , Progamador! novo aqui?</h1>
+				<p>Faça sua conta e não se perca mais nas suas tarefas.
+				</p>
+				<button class="ghost" id="signUp">Não tenho uma conta</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>
+		
+
+		Cansado de ser organizado? Delete sua conta <a href="crud.php"> clicando aqui </a> e seja livre!
+
+
+	</p> 
+</footer>
+
+
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
